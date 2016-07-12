@@ -1,0 +1,17 @@
+---
+title: "SISBIDrep1"
+author: "Eugenie Jackson"
+date: "July 12, 2016"
+output: html_document
+---
+installing googlesheets
+```{r}
+#install.packages("googlesheets")
+library("googlesheets")
+#??gs_read
+sheets_url="https://docs.google.com/spreadsheets/d/18KQQd4LY5k8Ucux1MvWCsQGQJlvd0ECTnn-3ixdOKFM/pubhtml"
+gsurl1=gs_url(sheets_url)
+dat=gs_read(gsurl1)
+dateaccessed=date()
+dateaccessed
+```
